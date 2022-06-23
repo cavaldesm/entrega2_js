@@ -1,0 +1,114 @@
+<!--Guía Celíaca 2022-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<!--Ícono y título-->
+
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets\logo.png" type="image/x-icon"> <!--Logo en miniatura-->
+
+<!--Hoja de estilos-->
+
+<link rel="stylesheet" href="css\estilos.css">
+
+<!--Google Fonts-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ruda:wght@900&display=swap" rel="stylesheet">
+
+<!--Font Awesome / Íconos-->
+<script src="https://kit.fontawesome.com/69f2dad0e2.js" crossorigin="anonymous"></script>
+
+<!--Título de la página-->
+
+<title>Guía Celíaca 2022</title>
+
+<!--Encabezado-->
+<body>
+    <header>
+        <div class="grid-container-bannerlogo"> <!--Contenedor-->
+        <img src="assets\bannertitulo.png" height="100px" width="150px" class="responsive"> <!--Logo-->
+        </div>
+
+        <div class="texto-container"> <!--Contenedor-->
+            <h1>La última Encuesta Nacional de Salud arrojó que, en Chile, 97 mil personas padecen de enfermedad celíaca.</h1>
+            <p>El único tratamiento de la enfermedad celíaca es evitar todo alimento que contenga gluten, aunque sea en cantidad mínimas.</p>
+            <p>En <u>Guía Celíaca</u> recopilamos y ponemos a tu disposición los locales del país que ofrecen opciones de comida libres de gluten y de trazas.</p>
+        </div>
+
+<!--Banner con titular-->
+<img src="assets\bannerseccion1.png" width="200px" height="200px" class="responsive"> <!--Sección-->
+
+<!--Un "carrusel" con imágenes de alimentos que un celíaco no puede comer-->
+<div class="images-slideshow">
+    <div class="imageSlides fade">
+        <img src="assets\trigo.png" class="carrusel">
+        <p class="textolocal2">Trigo</p>
+        <p class="textolocal2">Reemplázalo por: arroz, maíz, alforfón.</p>
+    </div>
+    <div class="imageSlides fade">
+        <img src="assets\avena.png" class="carrusel">
+        <p class="textolocal2">Avena</p>
+        <p class="textolocal2">Reemplázala por: quínoa, amaranto, mijo.</p>
+    </div>
+    <div class="imageSlides fade">
+        <img src="assets\centeno.png" class="carrusel">
+        <p class="textolocal2">Centeno</p>
+        <p class="textolocal2">Reemplázalo por: sorgo, terf, sésamo.</p>
+    </div>
+    <div class="imageSlides fade">
+        <img src="assets\cebada.png" class="carrusel">
+        <p class="textolocal2">Cebada</p>
+        <p class="textolocal2">Reemplázala por: sorgo, terf, sésamo.</p>
+    </div>
+
+    <!--Botones-->
+    <a class="slider-btn previous" onclick="setSlides(-1)">❮</a>
+    <a class="slider-btn next" onclick="setSlides(1)">❯</a>
+</div>
+
+<!--Banner con títular-->
+<img src="assets\bannerseccion.png" width="200px" height="200px" class="responsive"> <!--Sección-->
+
+<!--Locales de comida sugeridos-->
+<article class="recomendado">
+    <div class="img-container"> <!--Imágenes-->
+        <img src="assets\el-logo-oficial-sin-tacc___u6xfaxi7_720x0__1.webp" id="local-img" class="local-img"> <!--Logo Sin TACC-->
+    </div>
+
+<!--Cuadros de texto-->
+<h4 class="textolocal" id="nombre">Nombre del local</h4>
+<p class="textolocal" id="descripcion">Ubicación del local</p>
+<p class="textolocal2" id="info">Información adicional. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aliquam consectetur quae eum voluptates voluptate sunt veniam, esse debitis quis cumque voluptatum vero dolor facilis modi magnam eaque nulla animi.</p>
+
+<!--Botón para avanzar y retroceder-->
+<div class="button-container">
+    <button class="prev-btn">Atrás
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="next-btn">Siguiente
+        <i class="fas fa-chevron-right"></i>
+    </button>
+    </div>
+
+<!--Botón al azar-->
+<div class="button-container">
+        <button class="random-btn">¡Recomiéndame un local al azar!</button>
+</div>
+
+</article>
+</header>
+
+<!--JavaScript-->
+<script src="javascript\javascript.js"></script>
+</body>
+</head>
+
+</html>
+
+<!--Recordatorio para mí misma: incluir una sección que diga "participa" y ponerle un formulario para el usuario pueda ingresar datos, etc-->
