@@ -64,6 +64,13 @@ p{
     margin-bottom: 10px;
 }
 
+.textolocal3{
+  font-size: 1vw;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 /*Botones*/
 
 .button-container{
@@ -143,3 +150,25 @@ p{
     color: #ECEFD2;
     background-color: #9CD097;
   }
+
+/*Localstorage*/
+
+#usuariorecomienda {
+  font-family: "Ruda";
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.sug-btn{
+  background-color: #9CD097;
+  padding: 5px;
+  font-family: "Ruda";
+  font-size: 20px;
+  margin: 10px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.sug-btn:hover{
+  font-style: italic;
+}

@@ -85,6 +85,9 @@
 <h4 class="textolocal" id="nombre">Nombre del local</h4>
 <p class="textolocal" id="descripcion">Ubicación del local</p>
 <p class="textolocal2" id="info">Información adicional. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aliquam consectetur quae eum voluptates voluptate sunt veniam, esse debitis quis cumque voluptatum vero dolor facilis modi magnam eaque nulla animi.</p>
+<!--Actualización-->
+<p class="textolocal3" id="info">Esta información se actualizó por última vez el:</p>
+<p class="textolocal3"><span id="actualizacion"></span></p>
 
 <!--Botón para avanzar y retroceder-->
 <div class="button-container">
@@ -103,6 +106,16 @@
 
 </article>
 </header>
+
+<!--Probando LocalStorage-->
+
+<div class="button-container">
+<h1 class="textolocal">¿Y si tú nos recomiendas un lugar?</h1>
+<textarea id="usuariorecomienda" rows="5" cols="50"></textarea>
+<p></p>
+<button class="sug-btn" onclick="mySave()">Envía tu sugerencia</button>
+<button class="sug-btn" onclick="myLoad()">Haz memoria...</button>
+</div>
 
 <!--JavaScript-->
 <script src="javascript\javascript.js"></script>

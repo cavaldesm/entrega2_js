@@ -146,3 +146,31 @@ function displaySlides(num) {
     }
     slides[currentIndex - 1].style.display = "block";
 }
+
+// DOM
+// Informar sobre actualización
+
+document.getElementById("actualizacion").innerHTML = document.lastModified;
+
+const btn = document.getElementById('btn');
+
+// DOM
+// Cambiar texto del botón y su color de fondo tras clickearlo
+
+randomBtn.addEventListener('click', function handleClick() {
+  const initialText = '';
+
+  randomBtn.innerHTML = '<span style="background-color: salmon">¡Buena elección! :)<span>';
+})
+
+// Probando LocalStorage
+
+function mySave(){
+  var miContenido = document.getElementById("usuariorecomienda").value;
+  localStorage.setItem("miContenido", miContenido);
+}
+
+function myLoad(){
+  var miContenido = localStorage.getItem("miContenido");
+  document.getElementById("usuariorecomienda").value = miContenido;
+}
